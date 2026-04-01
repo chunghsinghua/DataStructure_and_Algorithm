@@ -8,7 +8,7 @@ int bsearch(int a[], int left, int right, int x)
         if (a[mid] < x)
             left = mid + 1;
         else
-            right = mid;
+            right = mid-1;
     }
     return left;
 }
